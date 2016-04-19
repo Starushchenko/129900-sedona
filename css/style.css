@@ -1,0 +1,25 @@
+body {
+    font-size: 12px;
+    line-height: normal;
+    color: #000000;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size:21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight:bold;
+    font-family:[PTSans Bold];
+    text-transform:uppercase;
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 100%;
+    color: #000000;
+    font-weight:bold;
+    font-family:[PTSans Bold];
+    text-transform: uppercase;
+}
