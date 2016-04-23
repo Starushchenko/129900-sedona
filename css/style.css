@@ -4,15 +4,183 @@ body {
     color: #000;
     font-weight: normal;
     font-family: "PT Sans","Arial", sans-serif;
+    text-transform:uppercase;
 }
 
 h1,h2 {
     font-size:21px;
     line-height: 21px;
     font-weight:bold;
-    text-transform:uppercase;
 }
 
 h1 {
     line-height: 26px;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+.nav-cell{
+    width: 20%;
+    padding: 15px 0;
+}
+.nav-cell a {
+    text-decoration: none;
+    font-weight: bold;
+    color:#000;
+    font-size: 14px;
+    
+}
+
+.nav-cell-left {
+    float: left;
+}
+
+.nav-cell-right {
+    float: right;
+}
+
+.main-navigation {
+    margin-top: -9px;
+    width: 100%;
+    font-size: 0;
+}
+
+.main-navigation ul li{
+    list-style: none;
+}
+
+.logo-button {
+    text-align: center;
+}
+
+.main-picture {
+    background-image: url("../img/main-background.jpg");
+    background-size: 100% 508px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 75px 0;
+}
+.logo-button {
+    position: absolute;
+    left: 669px;
+    top: 0px;
+}
+
+.welcome {
+    text-align: center;
+    border: 1px solid green;
+}
+
+.feature {
+    width: 100%;
+    background: blue;
+    text-align: center;
+}
+
+.feature-blue{
+    width: 33%;
+    float: left;
+    background: red;
+    min-height: 256px;
+}
+
+.feature-right {
+    float: right;
+}
+
+.feature-block {
+    width:33%;
+    float: left;    
+}
+
+.search-form-holder {
+    text-align: center;
+}
+
+.hashtag-footer, .social-footer, .footer-copyright {
+    float: left;
+    width: 33%;
+    min-height: 120px;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+.search-form {
+    display: none;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.filter-form {
+    min-height: 217px;
+    background-image: url(../img/filter-background.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.filter-form .inputs {
+    float: left;
+}
+
+.filter-form .inputs:last-child {
+    float: right;
+}
+
+.filter-form .inputs ul li {
+    list-style: none;
+}
+ 
+.sort {
+    width: 100%;
+}
+
+.sort-title {
+    float: left;
+    width: 207px;
+    border: 2px solid red;
+    min-height: 86px;
+}
+
+.sort-filter {
+    float: left;
+    width: 393px;
+    border: 2px solid red;
+    min-height: 86px;
+}
+
+.sort-filter ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.sort-arrow {
+    float: right;
+    width: 170px;
+    border: 2px solid red;
+    min-height: 86px;
+}
+
+.result-item {
+    width: 100%;
+}
+
+.result-item-image {
+    float: left;
+}
+
+.result-item-content {
+    float: left;
+}
+
+.result-item-rating{
+    float: right;
 }
