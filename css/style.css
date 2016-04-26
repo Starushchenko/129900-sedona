@@ -17,77 +17,96 @@ h1 {
     line-height: 26px;
 }
 
-
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 6%;
 }
 
-.nav-cell{
-    width: 20%;
-    padding: 15px 0;
+.main-navigation {
+    margin: 0 6%;
 }
-.nav-cell a {
+
+.main-navigation ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    list-style: none;
+    width: 20%;
+    padding: 21px 0;
+}
+
+.main-navigation ul li:nth-child(3) {
+    margin-left: 16%;
+    text-align: right;
+}
+
+.main-navigation ul li:nth-child(4) {
+    text-align: right;
+}
+
+
+.main-navigation ul li a {
     text-decoration: none;
     font-weight: bold;
     color:#000;
     font-size: 14px;
-    
 }
 
-.nav-cell-left {
-    float: left;
-}
-
-.nav-cell-right {
-    float: right;
-}
-
-.main-navigation {
-    margin-top: -9px;
-    width: 100%;
-    font-size: 0;
-}
-
-.main-navigation ul li{
-    list-style: none;
-}
 
 .logo-button {
     text-align: center;
 }
 
 .main-picture {
-    background-image: url("../img/main-background.jpg");
-    background-size: 100% 508px;
-    background-repeat: no-repeat;
+    background: url("../img/main-background.jpg") no-repeat;
     text-align: center;
     padding: 75px 0;
 }
 .logo-button {
     position: absolute;
-    left: 669px;
+    left: 50%;
     top: 0px;
+    margin-left: -65px;
+    z-index: 2;
 }
 
 .welcome {
     text-align: center;
-    border: 1px solid green;
+    padding: 65px 355px 55px;
 }
 
 .feature {
     width: 100%;
-    background: blue;
     text-align: center;
+    background: #fff;
 }
 
 .feature-blue{
     width: 33%;
     float: left;
-    background: red;
+    background: #81b3d2;
+    color: white;
     min-height: 256px;
+    padding: 20px 60px;
+    box-sizing: border-box;
 }
+
+.feature-blue h2 {
+    padding: 0px 60px;
+}
+
+.feature-img-right {
+    background: url("../img/feature-background-1.jpg") 100% 0;
+}
+
+.feature-img-left {
+    background: url("../img/feature-background-2.jpg");
+}
+
 
 .feature-right {
     float: right;
@@ -95,7 +114,23 @@ h1 {
 
 .feature-block {
     width:33%;
-    float: left;    
+    height: 330px;
+    float: left;
+    padding: 60px 55px 0;
+    box-sizing: border-box;
+}
+
+.feature-gray {
+    background: #eeeeee;
+}
+
+.feature-gray .feature-block {
+    height: 256px;
+    padding: 50px 60px;
+}
+
+.feature-gray .feature-block h2 {
+    margin: 0 69px;
 }
 
 .search-form-holder {
@@ -108,6 +143,13 @@ h1 {
     min-height: 120px;
     text-align: center;
     border: 1px solid blue;
+    vertical-align: middle;
+    padding-top: 36px;
+}
+
+.hashtag-footer a {
+    text-decoration: none;
+    color: #000;
 }
 
 .search-form {
@@ -127,12 +169,26 @@ h1 {
     width: 100%;
 }
 
+.filter-form ul {
+    padding: 0;
+}
+
 .filter-form .inputs {
     float: left;
+    color: #fff;
+}
+
+.filter-form .inputs h2 {
+    font-size: 16px;
+}
+
+.inputs:first-child {
+    margin-left: 73px;
 }
 
 .filter-form .inputs:last-child {
     float: right;
+    margin-right: 73px;
 }
 
 .filter-form .inputs ul li {
@@ -157,6 +213,15 @@ h1 {
     min-height: 86px;
 }
 
+.sort-filter span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sort-filter ul {
+    margin: 0;
+    padding: 0;
+}
 .sort-filter ul li {
     list-style: none;
     display: inline-block;
@@ -184,3 +249,4 @@ h1 {
 .result-item-rating{
     float: right;
 }
+
