@@ -50,11 +50,11 @@ body {
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
 /*-------------------------------------------------*/
-
-h1,h2 {
-    font-size:21px;
+h1,
+h2 {
+    font-size: 21px;
     line-height: 21px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 h1 {
@@ -92,14 +92,12 @@ h1 {
     text-align: right;
 }
 
-
 .main-navigation ul li a {
     text-decoration: none;
     font-weight: bold;
-    color:#000;
+    color: #000;
     font-size: 14px;
 }
-
 
 .logo-button {
     text-align: center;
@@ -110,6 +108,7 @@ h1 {
     text-align: center;
     padding: 75px 0;
 }
+
 .logo-button {
     position: absolute;
     left: 50%;
@@ -129,7 +128,7 @@ h1 {
     background: #fff;
 }
 
-.feature-blue{
+.feature-blue {
     width: 33%;
     float: left;
     background: #81b3d2;
@@ -151,13 +150,12 @@ h1 {
     background: url("../img/feature-background-2.jpg");
 }
 
-
 .feature-right {
     float: right;
 }
 
 .feature-block {
-    width:33%;
+    width: 33%;
     height: 330px;
     float: left;
     padding: 60px 55px 0;
@@ -181,7 +179,9 @@ h1 {
     text-align: center;
 }
 
-.hashtag-footer, .social-footer, .footer-copyright {
+.hashtag-footer,
+.social-footer,
+.footer-copyright {
     float: left;
     width: 33%;
     min-height: 120px;
@@ -264,7 +264,7 @@ h1 {
 .filter-form .inputs ul li {
     list-style: none;
 }
- 
+
 .sort {
     width: 100%;
 }
@@ -292,6 +292,7 @@ h1 {
     margin: 0;
     padding: 0;
 }
+
 .sort-filter ul li {
     list-style: none;
     display: inline-block;
@@ -344,7 +345,7 @@ h1 {
     background: #766357;
 }
 
-.result-item-rating{
+.result-item-rating {
     float: right;
     margin-right: 6%;
 }
