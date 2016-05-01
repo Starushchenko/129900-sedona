@@ -267,42 +267,82 @@ h1 {
 
 .sort {
     width: 100%;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .sort-title {
     float: left;
     width: 207px;
-    border: 2px solid red;
-    min-height: 86px;
+    padding: 32px 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .sort-filter {
     float: left;
     width: 393px;
-    border: 2px solid red;
-    min-height: 86px;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 34px 0 34px;
+    
 }
 
 .sort-filter span {
     display: inline-block;
-    vertical-align: middle;
+    margin-right: 40px;
 }
 
 .sort-filter ul {
     margin: 0;
     padding: 0;
+    font-size: 0;
+    display: inline-block;
 }
 
 .sort-filter ul li {
     list-style: none;
     display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 33px;
+    
+}
+
+.sort-filter a {
+    text-decoration: none;
+    color: #b1b1b1;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-filter li:first-child a {
+    color: #81b3d2;
+    border: none;
 }
 
 .sort-arrow {
     float: right;
     width: 170px;
-    border: 2px solid red;
     min-height: 86px;
+    text-align: right;
+    margin-right: 6%;
+}
+
+.sort-arrow span {
+    font-size: 23px;
+    line-height: 86px;
+    margin-left: -12px;;
+    padding: 0;
+}
+
+.sort-arrow .icon-up-dir {
+    color: #cccccc;
+}
+
+.sort-arrow .icon-down-dir {
+    color: #81b3d2;
 }
 
 .result-item {
@@ -366,4 +406,5 @@ h1 {
     background: #f2f2f2;
     padding: 3px 13px 6px 16px;
     margin-top: 48px;
+    color: #666666;
 }
