@@ -77,18 +77,24 @@ h1 {
 }
 
 .main-navigation ul li {
-    display: inline-block;
+    float: left;
     list-style: none;
     width: 20%;
-    padding: 21px 0;
+    padding: 18px 0;
+}
+
+.main-navigation ul li:nth-child(2) {
+    margin-left: 30px;
 }
 
 .main-navigation ul li:nth-child(3) {
-    margin-left: 16%;
+    float: right;
     text-align: right;
+    margin-left: 30px;
 }
-
+    
 .main-navigation ul li:nth-child(4) {
+    float: right;
     text-align: right;
 }
 
@@ -109,17 +115,38 @@ h1 {
     padding: 75px 0;
 }
 
+.main-picture:after {
+    display: block;
+    width: 1200px;
+    height: 57px;
+    content: "";
+    background: url(../img/main-background-mask.png) no-repeat;
+    margin-top: 19px;
+}
+
 .logo-button {
     position: absolute;
     left: 50%;
-    top: 0px;
+    top: 0;
     margin-left: -65px;
     z-index: 2;
 }
 
 .welcome {
     text-align: center;
-    padding: 65px 355px 55px;
+    margin-top: -30px;
+}
+
+.welcome h1 {
+    display: inline-block;
+    width: 450px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.welcome p {
+    margin-top: 17px;
+    margin-bottom: 52px;
 }
 
 .feature {
@@ -129,7 +156,7 @@ h1 {
 }
 
 .feature-blue {
-    width: 33%;
+    width: 33.33%;
     float: left;
     background: #81b3d2;
     color: white;
@@ -139,7 +166,7 @@ h1 {
 }
 
 .feature-blue h2 {
-    padding: 0px 60px;
+    padding: 0 60px;
 }
 
 .feature-img-right {
@@ -155,7 +182,7 @@ h1 {
 }
 
 .feature-block {
-    width: 33%;
+    width: 33.33%;
     height: 330px;
     float: left;
     padding: 60px 55px 0;
@@ -183,11 +210,15 @@ h1 {
 .social-footer,
 .footer-copyright {
     float: left;
-    width: 33%;
+    width: 33.33%;
     min-height: 120px;
     text-align: center;
     vertical-align: middle;
     padding-top: 36px;
+}
+
+.hashtag-footer {
+    margin-top: -5px;
 }
 
 .hashtag-footer a {
@@ -207,6 +238,11 @@ h1 {
     width: 46px;
     height: 48px;
     background: #81b3d2;
+    vertical-align: middle;
+}
+
+.social-btn:nth-child(2) span {
+    margin: 0 2px;
 }
 
 .footer-copyright span {
@@ -273,12 +309,13 @@ h1 {
 .sort-title {
     float: left;
     width: 207px;
-    padding: 32px 0;
+    padding: 30px 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
+    margin-left: 26px;
 }
 
 .sort-filter {
@@ -286,13 +323,15 @@ h1 {
     width: 393px;
     font-size: 12px;
     line-height: 18px;
-    padding: 34px 0 34px;
+    padding: 36px 0 29px;
+    margin-left: 2px;
     
 }
 
 .sort-filter span {
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 37px;
+    vertical-align: middle;
 }
 
 .sort-filter ul {
@@ -308,6 +347,7 @@ h1 {
     font-size: 12px;
     line-height: 18px;
     padding-right: 33px;
+    vertical-align: middle;
     
 }
 
@@ -327,13 +367,14 @@ h1 {
     width: 170px;
     min-height: 86px;
     text-align: right;
-    margin-right: 6%;
+    margin-right: 5.3%;
+    margin-left: px;
 }
 
 .sort-arrow span {
     font-size: 23px;
     line-height: 86px;
-    margin-left: -12px;;
+    margin-left: -12px;
     padding: 0;
 }
 
@@ -352,29 +393,31 @@ h1 {
 
 .result-item-image {
     float: left;
-    margin: 30px 30px 30px 6%;
+    margin: 29px 30px 25px 6%;
 }
 
 .result-item-content {
     float: left;
-    margin-top: 11px;
+    margin-top: 10px;
 }
 
 .result-item-content-info {
-    margin-top: -11px;
+    margin-top: -8px;
 }
 
-.result-item-content-info span {
-    margin-left: 39px;
+.result-item-content-info span:first-child {
+    display: inline-block;
+    width: 115px;
 }
 
 .result-item-content-buttons .btn {
     display: inline-block;
     color: #fff;
-    padding: 8px 16px;
+    padding: 3px 17px 3px 17px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: -14px;
+    margin-right: 2px;
+    margin-top: 2px;
 }
 
 .more-btn {
@@ -404,7 +447,7 @@ h1 {
 
 .result-item-points {
     background: #f2f2f2;
-    padding: 3px 13px 6px 16px;
-    margin-top: 48px;
+    padding: 3px 14px;
+    margin-top: 35px;
     color: #666666;
 }
