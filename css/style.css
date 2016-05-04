@@ -156,7 +156,7 @@ h1 {
 }
 
 .feature-blue {
-    width: 33.33%;
+    width: 34%;
     float: left;
     background: #81b3d2;
     color: white;
@@ -204,6 +204,117 @@ h1 {
 
 .search-form-holder {
     text-align: center;
+    position: relative;
+}
+
+.search-form-holder h3 {
+    font-size: 30px;
+    line-height: 24px;
+    margin-top: 56px; 
+}
+
+.search-form-holder p {
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.btn-search {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    background: #766357;
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    padding: 30px 128px 30px 136px;
+}
+
+.modal-search-form {
+    position: absolute;
+    left: 50%;
+    width: 468px;
+    margin-left: -284px;
+    background: #fff;
+    padding: 50px 45px 50px 55px;
+    display:;
+}
+
+.modal-search-form label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-right: 14px;
+}
+
+.check-block {
+    text-align: left;
+    margin-bottom: 29px;
+}
+
+.check-block input {
+    width: 326px;
+    background: #f2f2f2;
+    border: none;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 8px 15px 8px 10px;
+    position: relative;
+}
+
+.check-block input:after {
+    content: "\e800";
+    font-family: "symbols-sedona";
+    color: #c2c2c2;
+    
+}
+
+.check-block:first-child input {
+    margin-left: 4px;
+}
+
+.adults-block, .children-block {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-bottom: 54px;
+}
+
+.adults-block label {
+    margin-right: 32px;
+}
+
+.children-block label {
+    margin-right: 26px;
+}
+
+.adults-block {
+    margin-right: 54px;
+}
+
+.adults-block input, .children-block input {
+    width: 90px;
+    background: #f2f2f2;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: inherit;
+    padding: 8px 15px;
+    
+}
+
+.modal-search-form input[type="submit"] {
+    width: 458px;
+    background: #81b3d2;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 17px;
+    
 }
 
 .hashtag-footer,
@@ -258,10 +369,6 @@ h1 {
     font-size: 0;
 }
 
-.search-form {
-    display: none;
-}
-
 .clearfix {
     content: "";
     display: table;
@@ -269,7 +376,6 @@ h1 {
 }
 
 .filter-form {
-    min-height: 217px;
     background-image: url(../img/filter-background.jpg);
     background-repeat: no-repeat;
     width: 100%;
@@ -286,10 +392,17 @@ h1 {
 
 .filter-form .inputs h2 {
     font-size: 16px;
+    margin-bottom: 27px;
+    margin-top: 27px;
+}
+
+.filter-form .inputs:last-child h2 {
+    margin-bottom: 10px;
 }
 
 .inputs:first-child {
     margin-left: 73px;
+    margin-right: 116px;
 }
 
 .filter-form .inputs:last-child {
@@ -299,6 +412,142 @@ h1 {
 
 .filter-form .inputs ul li {
     list-style: none;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin-left: 23px;
+}
+
+li:last-child input[type="checkbox"] + label{
+    margin-bottom: 15px;
+}
+
+.inputs input[type="checkbox"] {
+    opacity: 0;
+}
+
+.inputs input[type="checkbox"] + label::before {
+    content: "\2610";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    font-family: "symbols-sedona";
+    font-size: 26px;
+    line-height: 20px;
+    left: -40px;
+}
+
+.inputs input[type="checkbox"]:checked + label::before {
+    content: "\2611";
+}
+
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    color: #000000;
+    background: #ffffff;
 }
 
 .sort {
