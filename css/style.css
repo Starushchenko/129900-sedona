@@ -5,6 +5,7 @@ body {
     font-weight: normal;
     font-family: "PT Sans","Arial", sans-serif;
     text-transform: uppercase;
+    background: #f2f2f2;
 }
 
 /*-----------------Иконочный шрифт------------------*/
@@ -64,6 +65,7 @@ h1 {
 .container {
     width: 1200px;
     margin: 0 auto;
+    background: #fff;
 }
 
 .main-navigation {
@@ -105,6 +107,26 @@ h1 {
     font-size: 14px;
 }
 
+.main-navigation ul li a:hover {
+    color: #81b3d2;
+}
+
+.main-navigation ul li a:active {
+    color: #b2b2b2
+}
+
+.main-navigation .active-page {
+    color: #766357;
+}
+
+.main-navigation .active-page:hover{
+    color: #604e43;
+}
+
+.main-navigation .active-page:active{
+    color: #d6d0cc;
+}
+
 .logo-button {
     text-align: center;
 }
@@ -121,7 +143,7 @@ h1 {
     height: 57px;
     content: "";
     background: url(../img/main-background-mask.png) no-repeat;
-    margin-top: 19px;
+    margin-top: 20px;
 }
 
 .logo-button {
@@ -161,7 +183,7 @@ h1 {
     background: #81b3d2;
     color: white;
     min-height: 256px;
-    padding: 20px 60px;
+    padding: 30px 60px;
     box-sizing: border-box;
 }
 
@@ -183,10 +205,13 @@ h1 {
 
 .feature-block {
     width: 33.33%;
-    height: 330px;
     float: left;
-    padding: 60px 55px 0;
+    padding: 65px 55px 0;
     box-sizing: border-box;
+}
+
+.feature-white .feature-block {
+    min-height: 330px;
 }
 
 .feature-gray {
@@ -194,13 +219,12 @@ h1 {
 }
 
 .feature-gray .feature-block {
-    height: 256px;
     padding: 50px 60px;
 }
 
 .feature-gray .feature-block h2 {
-    margin: 0 69px;
-}
+    margin: 0 69px 20px;
+}    
 
 .search-form-holder {
     text-align: center;
@@ -237,7 +261,7 @@ h1 {
     margin-left: -284px;
     background: #fff;
     padding: 50px 45px 50px 55px;
-    display:;
+    box-shadow: 0px 2px 10px 0px #766357;
 }
 
 .modal-search-form label {
@@ -245,6 +269,7 @@ h1 {
     line-height: 26px;
     font-weight: bold;
     margin-right: 14px;
+    margin-left: 6px;
 }
 
 .check-block {
@@ -253,7 +278,7 @@ h1 {
 }
 
 .check-block input {
-    width: 326px;
+    width: 320px;
     background: #f2f2f2;
     border: none;
     font-size: inherit;
@@ -262,11 +287,30 @@ h1 {
     position: relative;
 }
 
+.check-block input:hover, .adults-block input:hover, .children-block input:hover{
+    background: #ebebeb;
+}
+
+.check-block input:active, .adults-block input:active, .children-block input:active {
+    background: #fff;
+    outline: 2px solid #e5e5e5;
+}
+
 .check-block input:after {
     content: "\e800";
     font-family: "symbols-sedona";
     color: #c2c2c2;
-    
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+.check-block input::after:hover {
+    color: #000;
+}
+
+.check-block input::after:active {
+    color: #81b3d2;
 }
 
 .check-block:first-child input {
@@ -281,7 +325,8 @@ h1 {
 }
 
 .adults-block label {
-    margin-right: 32px;
+    margin-left: 2px;
+    margin-right: 38px;
 }
 
 .children-block label {
@@ -289,11 +334,11 @@ h1 {
 }
 
 .adults-block {
-    margin-right: 54px;
+    margin-right: 58px;
 }
 
 .adults-block input, .children-block input {
-    width: 90px;
+    width: 80px;
     background: #f2f2f2;
     border: none;
     text-align: center;
@@ -314,7 +359,15 @@ h1 {
     line-height: 26px;
     text-transform: uppercase;
     padding: 17px;
-    
+}
+
+.modal-search-form input[type="submit"]:hover {
+    background: #669ec0;
+}
+
+.modal-search-form input[type="submit"]:active {
+    background: #5496bd;
+    color: #88b6d1;
 }
 
 .hashtag-footer,
@@ -328,8 +381,8 @@ h1 {
     padding-top: 36px;
 }
 
-.hashtag-footer {
-    margin-top: -5px;
+.hashtag-footer h2{
+    margin-top: 10px;
 }
 
 .hashtag-footer a {
@@ -352,6 +405,15 @@ h1 {
     vertical-align: middle;
 }
 
+.social-btn span:hover {
+    background: #669ec0;
+}
+
+.social-btn span:active {
+    background: #5496bd;
+    color: #88b6d1;
+}
+
 .social-btn:nth-child(2) span {
     margin: 0 2px;
 }
@@ -359,14 +421,38 @@ h1 {
 .footer-copyright span {
     display: inline-block;
     vertical-align: middle;
-    text-align: left;
-    width: 241px;
-    height: 39px;
-    background: url("../img/html-academy-logo.png") no-repeat 97px;
+    margin-left: 102px;
+    margin-top: 2px;
 }
 
 .footer-copyright a {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../img/html-academy-logo.png") no-repeat;
+    width: 215px;
+    height: 39px;
     font-size: 0;
+    margin-top: 2px;
+}
+
+.footer-copyright a:hover {
+    background: url("../img/html-academy-logo-hover.png") no-repeat;
+}
+
+.footer-copyright a:active {
+    background: url("../img/html-academy-logo-active.png") no-repeat;
+}
+
+.main-footer-map {
+    position: relative;
+}
+
+.main-footer-map .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -125px;
+    background: rgba(255,255,255, 0.8)
 }
 
 .clearfix {
@@ -444,6 +530,11 @@ li:last-child input[type="checkbox"] + label{
 
 .inputs input[type="checkbox"]:checked + label::before {
     content: "\2611";
+}
+
+.inputs input[type="checkbox"]:disabled + label::before,
+.inputs input[type="checkbox"]:checked:disabled + label::before {
+    color: #6a6a6a;
 }
 
 .price-controls {
@@ -606,6 +697,14 @@ li:last-child input[type="checkbox"] + label{
     border-bottom: 1px dashed #81b3d2;
 }
 
+.sort-filter a:hover {
+    color: #81b3d2;
+}
+
+.sort-filter a:active {
+    color: #000;
+}
+
 .sort-filter li:first-child a {
     color: #81b3d2;
     border: none;
@@ -631,8 +730,20 @@ li:last-child input[type="checkbox"] + label{
     color: #cccccc;
 }
 
+.sort-arrow .icon-up-dir:hover {
+    color: #000;
+}
+
+.sort-arrow .icon-up-dir:active {
+    color: #81b3d2;
+}
+
 .sort-arrow .icon-down-dir {
     color: #81b3d2;
+}
+
+.sort-arrow .icon-down-dir:active {
+    color: #fff;
 }
 
 .result-item {
@@ -648,6 +759,14 @@ li:last-child input[type="checkbox"] + label{
 .result-item-content {
     float: left;
     margin-top: 10px;
+}
+
+.result-item-content-title:hover {
+    color: #81b3d2;
+}
+
+.result-item-content-title:active{
+    color: #b2b2b2;
 }
 
 .result-item-content-info {
@@ -673,8 +792,26 @@ li:last-child input[type="checkbox"] + label{
     background: #81b3d2;
 }
 
+.more-btn:hover {
+    background: #669ec0;
+}
+
+.more-btn:active {
+    background: #5496bd;
+    color: #88b6d1;
+}
+
 .reserve-btn {
     background: #766357;
+}
+
+.reserve-btn:hover {
+    background: #604e43;
+}
+
+.reserve-btn:active {
+    background: #503e33;
+    color: #857871;
 }
 
 .result-item-rating {
