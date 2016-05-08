@@ -123,8 +123,8 @@
                     </form>
                 </div>
             </div>
-            <div class="map">
-                <img src="img/map.jpg" alt="Карта">
+            <div class="map" id="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NrQIix_sZw_NLA3Rx0GXz2Xz-ZoqRmBK&width=1200&height=593&lang=ru_RU&sourceType=constructor&scroll=true"></script>
             </div>
         </div>
     </main>
@@ -144,14 +144,24 @@
             </section>
         </div>
     </footer>
+    <div class="overlay"></div>
     <script>
         var link = document.querySelector(".btn-search");
-        var popup = document.querySelector(".modal-search-form")
+        var popup = document.querySelector(".modal-search-form");
+        var overlay = document.querySelector(".overlay")
+        
         
         link.addEventListener("click", function(event) {
             event.preventDefault();
-            popup.classList.add(".modal-search-form-show")
+            popup.classList.add("modal-search-form-show");
+            overlay.classList.add("overlay-show")
             });
+        
+        overlay.addEventListener("click", function(event) {
+            event.preventDefault();
+            popup.classList.remove("modal-search-form-show");
+            overlay.classList.remove("overlay-show");
+      });
     </script>
 </body>
 
