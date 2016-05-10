@@ -71,6 +71,10 @@ h1 {
                 -3px 1px 3px 0 rgba(0,0,0,0.3);
 }
 
+.main-footer-map .container {
+    box-shadow: none;
+}
+
 .main-navigation {
     margin: 0 6%;
 }
@@ -326,11 +330,56 @@ h1 {
     vertical-align: middle;
     text-align: left;
     margin-bottom: 54px;
+    position: relative;
+}
+
+.minus-plus-symbol::before {
+    display: inline-block;
+    position: absolute;
+    font-size: 14px;
+    color: #a9a9a9;
+    font-family: "symbols-sedona";
+    content: "\e802";
+    line-height: 20px;
+    width: 12px;
+    height: 20px;
+}
+
+.adults-block .minus-plus-symbol::before {
+    left: 120px;
+    top: 8px;
+}
+
+.adults-block .minus-plus-symbol::after {
+    right: 15px;
+    top: 8px;
+}
+
+.children-block .minus-plus-symbol::before {
+    left: 85px;
+    top: 8px;
+}
+
+.children-block .minus-plus-symbol::after {
+    right: 15px;
+    top: 8px;
+}
+
+.minus-plus-symbol::after {
+    display: inline-block;
+    position: absolute;
+    font-size: 14px;
+    color: #a9a9a9;
+    font-family: "symbols-sedona";
+    content: "\e801";
+    line-height: 20px;
+    width: 12px;
+    height: 20px;
 }
 
 .adults-block label {
-    margin-left: 2px;
-    margin-right: 38px;
+    margin-left: -1px;
+    margin-right: 36px;
 }
 
 .children-block label {
@@ -338,7 +387,7 @@ h1 {
 }
 
 .adults-block {
-    margin-right: 58px;
+    margin-right: 55px;
 }
 
 .adults-block input, .children-block input {
