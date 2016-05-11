@@ -261,6 +261,11 @@ h1 {
     padding: 30px 128px 30px 136px;
 }
 
+#map {
+    width: 1200px;
+    height: 593px;
+}
+
 .modal-search-form {
     position: absolute;
     left: 50%;
@@ -332,6 +337,11 @@ h1 {
     margin-bottom: 54px;
     position: relative;
 }
+
+.modal-search-form input::-webkit-input-placeholder {color: #000; opacity: 1;}
+.modal-search-form input::-moz-placeholder          {color: #000; opacity: 1;}/* Firefox 19+ */
+.modal-search-form input:-moz-placeholder           {color: #000; opacity: 1;}/* Firefox 18- */
+.modal-search-form input:-ms-input-placeholder      {color: #000; opacity: 1;}
 
 .minus-plus-symbol::before {
     display: inline-block;
@@ -412,6 +422,7 @@ h1 {
     line-height: 26px;
     text-transform: uppercase;
     padding: 17px;
+    cursor: pointer;
 }
 
 .modal-search-form input[type="submit"]:hover {

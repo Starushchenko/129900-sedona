@@ -104,21 +104,21 @@
                     <form action="http://search.php" method="get" name="hotel-search">
                         <div class="check-block">
                             <label for="check-in">Дата заезда</label>
-                            <input type="date" id="check-in" value="24-04-2016">
+                            <input type="text" id="check-in" value="" placeholder="24-04-2016">
                         </div>
                         <div class="check-block">
                             <label for="check-out">Дата выезда</label>
-                            <input type="date" id="check-out" value="4-07-2016">
+                            <input type="text" id="check-out" value="" placeholder="4-07-2016">
                         </div>
 
                         <div class="adults-block">
                             <label for="adults">Взрослые</label>
-                            <input type="number" id="adults" value="2">
+                            <input type="text" id="adults" value="" placeholder="2">
                             <span class="minus-plus-symbol"></span>   
                         </div>
                         <div class="children-block">
                             <label for="children">Дети</label>
-                            <input type="number" id="children" value="0">
+                            <input type="text" id="children" value="" placeholder="0">
                             <span class="minus-plus-symbol"></span>   
                         </div>
                         <input type="submit" name="search-btn" class="btn" value="Найти">
@@ -126,7 +126,6 @@
                 </div>
             </div>
             <div class="map" id="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NrQIix_sZw_NLA3Rx0GXz2Xz-ZoqRmBK&width=1200&height=593&lang=ru_RU&sourceType=constructor&scroll=true"></script>
             </div>
         </div>
     </main>
@@ -147,11 +146,11 @@
         </div>
     </footer>
     <div class="overlay"></div>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script>
         var link = document.querySelector(".btn-search");
         var popup = document.querySelector(".modal-search-form");
-        var overlay = document.querySelector(".overlay")
-        
+        var overlay = document.querySelector(".overlay");
         
         link.addEventListener("click", function(event) {
             event.preventDefault();
@@ -161,9 +160,26 @@
         
         overlay.addEventListener("click", function(event) {
             event.preventDefault();
-            popup.classList.remove("modal-search-form-show");
             overlay.classList.remove("overlay-show");
-      });
+            popup.classList.remove("modal-search-form-show");
+        });
+        
+        var myMap;
+
+        // Дождёмся загрузки API и готовности DOM.
+        ymaps.ready(init);
+
+        function init () {
+        // Создание экземпляра карты и его привязка к контейнеру с
+        // заданным id ("map").
+        myMap = new ymaps.Map('map', {
+        // При инициализации карты обязательно нужно указать
+        // её центр и коэффициент масштабирования.
+        center: [55.76, 37.64], // Москва
+        zoom: 10;
+        }, {
+        searchControlProvider: 'yandex#search'
+        });}
     </script>
 </body>
 
