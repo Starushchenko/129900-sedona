@@ -15,16 +15,16 @@
             <nav class="main-navigation">
                 <ul>
                     <li>
-                        <a href="#">Информация</a>
+                        <a class="nav-a" href="#">Информация</a>
                     </li>
                     <li>
-                        <a href="#">Фото и видео</a>
+                        <a class="nav-a" href="#">Фото и видео</a>
                     </li>
                     <li>
-                        <a href="catalog.html">Гостиницы</a>
+                        <a class="nav-a" href="catalog.html">Гостиницы</a>
                     </li>
                     <li>
-                        <a href="#">Карта штата</a>
+                        <a class="nav-a" href="#">Карта штата</a>
                     </li>
                 </ul>
             </nav>
@@ -104,11 +104,11 @@
                     <form action="http://search.php" method="get" name="hotel-search">
                         <div class="check-block">
                             <label for="check-in">Дата заезда</label>
-                            <input type="text" id="check-in" value="" placeholder="24-04-2016">
+                            <input type="text" id="check-in" value="" placeholder="24 АПРЕЛЯ 2016">
                         </div>
                         <div class="check-block">
                             <label for="check-out">Дата выезда</label>
-                            <input type="text" id="check-out" value="" placeholder="4-07-2016">
+                            <input type="text" id="check-out" value="" placeholder="4 ИЮЛЯ 2016">
                         </div>
 
                         <div class="adults-block">
@@ -146,41 +146,9 @@
         </div>
     </footer>
     <div class="overlay"></div>
-    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script>
-        var link = document.querySelector(".btn-search");
-        var popup = document.querySelector(".modal-search-form");
-        var overlay = document.querySelector(".overlay");
-        
-        link.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup.classList.add("modal-search-form-show");
-            overlay.classList.add("overlay-show")
-            });
-        
-        overlay.addEventListener("click", function(event) {
-            event.preventDefault();
-            overlay.classList.remove("overlay-show");
-            popup.classList.remove("modal-search-form-show");
-        });
-        
-        var myMap;
-
-        // Дождёмся загрузки API и готовности DOM.
-        ymaps.ready(init);
-
-        function init () {
-        // Создание экземпляра карты и его привязка к контейнеру с
-        // заданным id ("map").
-        myMap = new ymaps.Map('map', {
-        // При инициализации карты обязательно нужно указать
-        // её центр и коэффициент масштабирования.
-        center: [55.76, 37.64], // Москва
-        zoom: 10;
-        }, {
-        searchControlProvider: 'yandex#search'
-        });}
-    </script>
+    
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>
