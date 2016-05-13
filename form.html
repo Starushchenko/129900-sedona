@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Поиск гостиницы в Седоне</title>
+    <meta charset="UTF-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="modal-search-form modal-search-form-window">
+        <form action="http://search.php" method="get" name="hotel-search">
+            <div class="check-block">
+                <label for="check-in">Дата заезда</label>
+                <input type="text" id="check-in" value="" placeholder="24 АПРЕЛЯ 2016">
+            </div>
+            <div class="check-block">
+                <label for="check-out">Дата выезда</label>
+                <input type="text" id="check-out" value="" placeholder="4 ИЮЛЯ 2016">
+            </div>
+
+            <div class="adults-block">
+                <label for="adults">Взрослые</label>
+                <input type="text" id="adults" value="" placeholder="2">
+                <span class="minus-plus-symbol"></span>   
+            </div>
+            <div class="children-block">
+                <label for="children">Дети</label>
+                <input type="text" id="children" value="" placeholder="0">
+                <span class="minus-plus-symbol"></span>   
+            </div>
+            <input type="submit" name="search-btn" class="btn" value="Найти">
+        </form>
+    </div>
+</body>
+</html>

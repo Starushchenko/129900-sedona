@@ -341,6 +341,10 @@ h1 {
     display: none;
 }
 
+.modal-search-form-window {
+    display: block;
+}
+
 .modal-search-form label {
     font-size: 14px;
     line-height: 26px;
