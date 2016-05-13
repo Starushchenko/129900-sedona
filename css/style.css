@@ -253,12 +253,27 @@ h1 {
     background: #81b3d2;
     color: white;
     min-height: 256px;
-    padding: 30px 60px;
+    padding: 30px 60px 30px 50px;
     box-sizing: border-box;
 }
 
 .feature-blue h2 {
     padding: 0 60px;
+    margin-top: 25px;
+    margin-left: -5px;
+    margin-bottom: 24px;
+}
+
+.feature-blue p {
+    margin-left: -12px;
+}
+
+.feature-blue p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.feature-right:last-child {
+    padding-left: 58px;
 }
 
 .feature-img-right {
@@ -276,8 +291,21 @@ h1 {
 .feature-block {
     width: 33.33%;
     float: left;
-    padding: 65px 55px 0;
+    padding: 55px 55px 0;
     box-sizing: border-box;
+}
+
+.feature-block:first-child, .feature-block:nth-child(2) {
+    padding: 60px 55px 0;
+}
+
+.feature-block h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.feature-block:first-child h2 {
+    margin-top: 23px;
 }
 
 .feature-white .feature-block {
@@ -289,11 +317,19 @@ h1 {
 }
 
 .feature-gray .feature-block {
-    padding: 50px 60px;
+    padding: 46px 60px;
+}
+
+.feature-gray .feature-block:first-child {
+    padding: 24px 60px;
 }
 
 .feature-gray h2 {
-    margin: 0 69px 20px;
+    margin: 0 69px 25px;
+}
+
+.first-p {
+    margin-bottom: 20px;
 }
 
 .search-form-holder {
@@ -309,7 +345,7 @@ h1 {
 
 .search-form-holder p {
     line-height: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 .btn-search {
@@ -445,8 +481,7 @@ h1 {
     opacity: 1;
 }
 
-.minus-plus-symbol::before {
-    display: inline-block;
+.adults-block::before, .children-block::before {
     position: absolute;
     font-size: 14px;
     color: #a9a9a9;
@@ -457,38 +492,38 @@ h1 {
     height: 20px;
 }
 
-.minus-plus-symbol:hover::before,
-.minus-plus-symbol:hover::after {
+.adults-block:hover::before,
+.adults-block:hover::after, .children-block:hover::before,
+.children-block:hover::after {
     color: #000;
 }
 
-.minus-plus-symbol:active::before,
-.minus-plus-symbol:active::after {
+.adults-block:active::before,
+.adults-block:active::after, .children-block:active::before,
+.children-block:active::after {
     color: #81b3d2;
 }
 
-.adults-block .minus-plus-symbol::before {
+.adults-block::before {
     left: 120px;
-    top: 8px;
+    top: 10px;
 }
-
-.adults-block .minus-plus-symbol::after {
+.adults-block::after {
     right: 15px;
     top: 8px;
 }
 
-.children-block .minus-plus-symbol::before {
+.children-block::before {
     left: 85px;
     top: 8px;
 }
 
-.children-block .minus-plus-symbol::after {
+.children-block::after {
     right: 13px;
     top: 8px;
 }
 
-.minus-plus-symbol::after {
-    display: inline-block;
+.adults-block::after, .children-block::after {
     position: absolute;
     font-size: 14px;
     color: #a9a9a9;
@@ -531,11 +566,13 @@ h1 {
     font-family: inherit;
     font-weight: bold;
     font-size: 21px;
-    line-height: 26px;
+    line-height: 24px;
     text-transform: uppercase;
     padding: 17px;
     cursor: pointer;
+    margin-top: 3px;
     margin-bottom: 5px;
+    margin-right: 9px;
 }
 
 .modal-search-form input[type="submit"]:hover {
@@ -580,6 +617,10 @@ h1 {
     height: 48px;
     background: #81b3d2;
     vertical-align: middle;
+}
+
+.social-btn .icon-youtube {
+    font-size: 23px;
 }
 
 .social-btn span:hover {
@@ -628,7 +669,7 @@ h1 {
     position: absolute;
     left: 0;
     right: 0;
-    top: -125px;
+    top: -120px;
     background: rgba(255, 255, 255, 0.8)
 }
 
@@ -665,7 +706,7 @@ h1 {
 
 .inputs:first-child {
     margin-left: 73px;
-    margin-right: 116px;
+    margin-right: 118px;
 }
 
 .filter-form .inputs:last-child {
@@ -716,7 +757,7 @@ li:last-child input[type="checkbox"] + label {
 
 .price-controls {
     position: relative;
-    height: 36px;
+    height: 34px;
     margin-bottom: 20px;
     font-size: 0;
     border: 2px solid #ffffff;
@@ -740,6 +781,7 @@ li:last-child input[type="checkbox"] + label {
     line-height: 38px;
     vertical-align: top;
     cursor: pointer;
+    margin-top: -3px;
 }
 
 .price-controls .min-price,
@@ -960,7 +1002,7 @@ li:last-child input[type="checkbox"] + label {
 
 .result-item-content {
     float: left;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .result-item-content-title a {
