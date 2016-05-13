@@ -394,11 +394,11 @@ h1 {
     top: 127px;
 }
 
-.check-block::after:hover {
+.check-block:hover::after {
     color: #000;
 }
 
-.check-block::after:active {
+.check-block:active::after {
     color: #81b3d2;
 }
 
@@ -453,13 +453,13 @@ h1 {
     height: 20px;
 }
 
-.minus-plus-symbol::before:hover,
-.minus-plus-symbol::after:hover {
+.minus-plus-symbol:hover::before,
+.minus-plus-symbol:hover::after {
     color: #000;
 }
 
-.minus-plus-symbol::before:active,
-.minus-plus-symbol::after:active {
+.minus-plus-symbol:active::before,
+.minus-plus-symbol:active::after {
     color: #81b3d2;
 }
 
