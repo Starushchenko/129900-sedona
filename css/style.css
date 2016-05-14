@@ -596,7 +596,7 @@ h1 {
 }
 
 .hashtag-footer h2 {
-    margin-top: 10px;
+    margin-top: 13px;
 }
 
 .hashtag-footer a {
@@ -639,8 +639,8 @@ h1 {
 .footer-copyright span {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 102px;
-    margin-top: 2px;
+    margin-left: 100px;
+    margin-top: 4px;
 }
 
 .footer-copyright a {
@@ -650,7 +650,8 @@ h1 {
     width: 215px;
     height: 39px;
     font-size: 0;
-    margin-top: 2px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .footer-copyright a:hover {
@@ -683,6 +684,7 @@ h1 {
     background-image: url(../img/filter-background.jpg);
     background-repeat: no-repeat;
     width: 100%;
+    min-height: 216px;
 }
 
 .filter-form ul {
@@ -696,7 +698,7 @@ h1 {
 
 .filter-form h2 {
     font-size: 16px;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
     margin-top: 27px;
 }
 
@@ -801,6 +803,10 @@ li:last-child input[type="checkbox"] + label {
     text-align: center;
 }
 
+.min-price {
+    margin-left: 4px;
+}
+
 ::-webkit-input-placeholder {
     color: #fff;
     opacity: 1;
@@ -869,8 +875,9 @@ li:last-child input[type="checkbox"] + label {
 
 .btn-transparent {
     display: block;
-    margin: 0 auto;
-    padding: 6px 35px;
+    margin-left: 85px;
+    margin-top: -1px;
+    padding: 6px 32px 6px 35px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -1027,6 +1034,8 @@ li:last-child input[type="checkbox"] + label {
 .result-item-content-info span:first-child {
     display: inline-block;
     width: 115px;
+    margin-top: 2px;
+    margin-bottom: px;
 }
 
 .result-item-content-buttons .btn {
@@ -1036,7 +1045,7 @@ li:last-child input[type="checkbox"] + label {
     text-decoration: none;
     font-weight: bold;
     margin-right: 2px;
-    margin-top: 2px;
+    margin-top: px;
 }
 
 .more-btn {
@@ -1072,14 +1081,17 @@ li:last-child input[type="checkbox"] + label {
 
 .result-item-stars {
     font-size: 0;
-    margin-top: 30px;
+    margin-top: 29px;
+    margin-right: -4px;
     text-align: right;
+    margin-bottom: 37px;
 }
 
 .result-item-stars span {
     color: #81b3d2;
     font-size: 19px;
     line-height: 21px;
+    margin-left: -3px;
 }
 
 .result-item-points {
