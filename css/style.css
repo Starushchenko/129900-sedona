@@ -434,18 +434,6 @@ h1 {
     outline: 2px solid #e5e5e5;
 }
 
-.check-block:after {
-    content: "\e800";
-    font-family: "symbols-sedona";
-    color: #c2c2c2;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: normal;
-    position: absolute;
-    top: 60px;
-    right: 65px;
-}
-
 .check-block:nth-child(2)::after {
     top: 127px;
 }
@@ -508,6 +496,9 @@ h1 {
     font-family: "symbols-sedona";
     content: "\e802";
     line-height: 20px;
+    top: 2px;
+    margin: 0;
+    padding: 0;
 }
 
 .adults-block-minus:hover, .adults-block-plus:hover, .children-block-minus:hover, .children-block-plus:hover {
@@ -517,6 +508,7 @@ h1 {
 .adults-block-minus:active, .adults-block-plus:active, .children-block-minus:active, .children-block-plus:active {
     color: #81b3d2;
     border: none;
+    outline: none;
 }
 
 .adults-block-minus {
@@ -526,7 +518,6 @@ h1 {
 
 .adults-block-plus {
     left: 180px;
-    top: 0;
 }
 
 .children-block-minus {
@@ -534,7 +525,6 @@ h1 {
 }
 
 .children-block-plus {
-    top: 0;
     left: 145px;
 }
 
